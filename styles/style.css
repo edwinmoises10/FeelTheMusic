@@ -1,0 +1,521 @@
+/* CSS */
+/* GoogleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  padding: 10px 20px;
+}
+
+/* IMG img_title  */
+.img_title {
+  height: 80px;
+  width: 0 auto;
+}
+.aboutme_paragrah {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Containers WEB   */
+.aboutme_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.about_me {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.about_me:hover {
+  filter: brightness(80%);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.dataBands {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.data_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  height: 470px; /* o ajusta al contenido más alto */
+
+  border-radius: 15px;
+  background-color: #f2f2f7;
+  border: none;
+  padding: 15px;
+}
+.band_style:hover {
+  filter: brightness(80%);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.band_style {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+/* Estilo Font, Size etc  */
+/* Estilos Letra */
+h1 {
+  padding-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  color: rgb(50, 54, 61);
+  display: flex;
+  justify-content: center;
+  /* transition: 6s;  */
+  gap: 10px;
+}
+h1:hover {
+  transform-style: preserve-3d;
+  transition: 2s;
+  color: rgb(211, 223, 223);
+  filter: brightness(80%);
+  transform: scale(1.05);
+  transition: all 0.9s ease;
+}
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  color: rgb(50, 54, 61);
+  display: flex;
+  justify-content: start;
+}
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  color: rgb(50, 54, 61);
+  display: flex;
+  justify-content: start;
+}
+h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: rgb(50, 54, 61);
+  display: flex;
+  justify-content: start;
+}
+p {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.p_bands {
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.list-style-link {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+}
+.li_styles {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.style-link {
+  /* font-style: italic; */
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+.link_Helix {
+  font-style: italic;
+  color: #007aff;
+  text-decoration: none;
+}
+/* NAV Styles */
+/* UL contenedor de mi NAV se agrega padding top para separarlo */
+.navbar-nav {
+  padding-top: 20px;
+}
+/* Funcion Active para denotar que estamos en una pagina en especifico se debe cambiar en cada page-html */
+.nav-link.active {
+  background-color: #eaae8456;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+/* modifico <a class="nav-link active (agrego una nueva clase para modificar el texto del menu pre definido */
+.font_import {
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 300;
+}
+.nav-link.font_import:hover {
+  color: #ee2b04aa;
+  font-weight: 900;
+}
+.logo {
+  height: 50px;
+  width: auto;
+}
+/* bg-body-tertiary Background menu bar */
+/* line 26<span class="navbar-toggler-icon"></span>
+ Icono del menu tipo hamburguesa /// */
+.nav_menu {
+  height: 35px;
+  width: auto;
+}
+/* Padding para separar el menu del H1 */
+.navbar {
+  padding-bottom: 20px;
+}
+/* line 24  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" Borde del boton */
+.navbar-toggler {
+  padding: 8px;
+  border-radius: 15px;
+  border-color: rgba(148, 164, 177, 0.681);
+}
+/* esta funcion activa la sombra sobre el boton */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* CSS Form */
+.form_container {
+  padding: 10px 20px;
+  background-color: #f2f2f7;
+  border: none;
+  border-radius: 15px;
+}
+.col-12 {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.btn {
+  height: 40px;
+  width: 100px;
+}
+.btn-primary {
+  background-color: #007aff;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+.form-select {
+  color: #8e8e93;
+  font-size: 15px;
+}
+.form-control {
+  color: #8e8e93;
+  font-size: 14px;
+}
+/* label form Conectaconmigo */
+.form-label {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* grid Fundamento Musical */
+.scale_group {
+  padding: 10px;
+}
+.scale_container {
+  display: grid;
+  grid-template-rows: auto, auto, auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "title_main title_main title_main title_main title_main"
+    "scale_concept scale_concept scale_concept scale_structure scale_structure"
+    "scale_example  scale_example scale_example scale_example scale_example ";
+  background-color: #f2f2f7;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.title_main {
+  grid-area: title_main;
+  display: flex;
+  justify-content: center;
+}
+
+.scale_concept {
+  grid-area: scale_concept;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scale_structure {
+  grid-area: scale_structure;
+  display: flex;
+  justify-content: center;
+}
+
+.scale_example {
+  grid-area: scale_example;
+  display: flex;
+  justify-content: center;
+}
+
+/* links */
+.links_chords {
+  padding-top: 20px;
+}
+
+.links_info {
+  padding-top: 20px;
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.p-footer .p_1 {
+  color: black;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* @media device_media */
+/* movil */
+@media (max-width: 450px) {
+  /* fuentes */
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+
+  /* IMG img_title  */
+  .img_title {
+    height: 30px;
+  }
+  .logo {
+    height: 38px;
+    width: auto;
+  }
+  /* Icono del menu tipo hamburguesa  */
+  .nav_menu {
+    height: 30px;
+    width: auto;
+  }
+  /* menu fuente - NAV */
+  .font_import {
+    font-size: 10px;
+  }
+  .p_bands {
+    font-size: 10px;
+  }
+  .list-style-link {
+    font-size: 12px;
+  }
+
+  .p-footer .p_1 {
+    font-size: 8px;
+    justify-content: start;
+  }
+
+  /* Containers WEB   */
+  .aboutme_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .about_me {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+
+  .li_styles {
+    font-size: 12px;
+  }
+  /* bands */
+  .dataBands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .data_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: auto; /* o ajusta al contenido más alto */
+
+    border-radius: 15px;
+    background-color: #f2f2f7;
+    border: none;
+    gap: 10px;
+  }
+  .band_style:hover {
+    filter: brightness(80%);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  .band_style {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+
+  /* grid */
+  .scale_container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title_main"
+      "scale_concept"
+      "scale_structure"
+      "scale_example";
+  }
+
+  .scale_concept {
+    grid-area: scale_concept;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* form */
+  .btn-primary {
+    background-color: #007aff;
+    border: none;
+    color: white;
+    font-size: 12px;
+  }
+
+  .form-select {
+    color: #8e8e93;
+    font-size: 12px;
+  }
+  .form-control {
+    color: #8e8e93;
+    font-size: 12px;
+  }
+
+  /* label form Conectaconmigo */
+  .form-label {
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+/* tablets */
+@media (min-width: 451px) and (max-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+  /* IMG img_title  */
+  .img_title {
+    height: 60px;
+    width: 0 auto;
+  }
+  /* menu fuente - NAV */
+  .font_import {
+    font-size: 13px;
+  }
+  .p_bands {
+    font-size: 13px;
+  }
+  .list-style-link {
+    font-size: 13px;
+  }
+  .p-footer .p_1 {
+    font-size: 10px;
+    justify-content: end;
+  }
+  .dataBands {
+    flex-wrap: wrap;
+  }
+  .data_container {
+    width: 240px;
+    height: 400px; /* o ajusta al contenido más alto */
+  }
+  /* Containers WEB   */
+  .aboutme_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about_me {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+  .style-link {
+    font-size: 13px;
+  }
+  .li_styles {
+    font-size: 13px;
+  }
+}

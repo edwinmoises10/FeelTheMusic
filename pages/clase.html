@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap en todos los HTML-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <title>#AgendarClase</title>
+</head>
+
+<body>
+
+  <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/logo_sinfondo.png" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> Menu desplegable-->
+                    <img class="nav_menu" src="../assets/guitar.png" alt="">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Items del Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link font_import" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  font_import" aria-current="page" href="./fundamentoMusical.html">Fundamentos Musicales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font_import" aria-current="page" href="./tecnologiaMusical.html">Tecnología de Guitarra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active font_import" aria-current="page" href="#">Agendar
+                                Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font_import" aria-current="page" href="./contacto.html">Conecta Conmigo</a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--code  -->
+        <section class="sec sec_title">
+            <h1>Agendamiento de Clases</h1>
+            <p>Favor su ayuda ingresando los datos solicitados</p>
+        </section>
+        <section class="form_container">
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="user_firstname" class="form-label"></label>
+                    <input type="text" class="form-control" id="user_firstname" placeholder="First Name">
+                </div>
+                <div class="col-md-4">
+                    <label for="user_lastname" class="form-label"></label>
+                    <input type="text" class="form-control" id="user_lastname" placeholder="Last Name">
+                </div>
+
+                <div class="col-md-2">
+                    <label for="user_age" class="form-label"></label>
+                    <input type="number" class="form-control" id="user_age" placeholder="Edad">
+                </div>
+                <div class="col-md-4">
+                    <label for="user_instrument" class="form-label"></label>
+                    <select id="user_instrument" class="form-select">
+                        <option selected>¿Qué instrumento tocas?</option>
+                        <option>Guitarra Acustica</option>
+                        <option>Guitarra Electrica</option>
+                        <option>Bajo</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="user_experience" class="form-label"></label>
+                    <select id="user_experience" class="form-select">
+                        <option selected>Nivel de experiencia</option>
+                        <option>Basico</option>
+                        <option>Intermedio</option>
+                        <option>Avanzado</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="user_schedule" class="form-label"></label>
+                    <select id="user_schedule" class="form-select">
+                        <option selected>Horarios disponibles</option>
+                        <option>Lunes 18:30 GTM-05 </option>
+                        <option>Miercoles 18:30 GTM-05 </option>
+                        <option>Viernes 16:30 GTM-05 </option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="user_message" class="form-label"></label>
+                    <textarea class="form-control" id="user_message" rows="3"
+                        placeholder="Consultas adicionales"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </section>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <section class="p-footer">
+            <p class="p p_1">#FeelTheMusic</p>
+            <p class="p p_1">📧 edwinmoises.9319@gmail.com| 📸 @moises93_10 | 📱 +593 99 XXX XXXX | 🌍 Quito, Ecuador
+            </p>
+            <p class="p p_1">Moi Oña © 2025 Todos los derechos reservados</p>
+        </section>
+    </footer>
+
+
+    <!-- Bootstrap Antes del cierre del Body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
