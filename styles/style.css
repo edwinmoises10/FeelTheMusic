@@ -458,7 +458,7 @@ footer {
 }
 
 /* tablets */
-@media (min-width: 451px) and (max-width: 1024px) {
+@media (min-width: 451px) and (max-width: 1366px) {
   h1 {
     font-size: 60px;
   }
