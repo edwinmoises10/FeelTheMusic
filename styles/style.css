@@ -156,8 +156,7 @@ ul {
   list-style-type: none;
 }
 .link_Helix {
-  font-style: italic;
-  color: #007aff;
+  color: #8800ff;
   text-decoration: none;
 }
 /* NAV Styles */
@@ -377,7 +376,7 @@ footer {
   }
 
   .li_styles {
-    font-size: 12px;
+    font-size: 11px;
   }
   /* bands */
   .dataBands {
@@ -455,6 +454,9 @@ footer {
     font-size: 12px;
     font-weight: 300;
   }
+  footer {
+    padding-top: 10px;
+  }
 }
 
 /* tablets */
@@ -517,5 +519,8 @@ footer {
   }
   .li_styles {
     font-size: 13px;
+  }
+  footer {
+    padding-top: 10px;
   }
 }
