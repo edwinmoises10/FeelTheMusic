@@ -311,7 +311,7 @@ footer {
   justify-content: center;
 }
 
-/*  */
+/* Estilos hover para links con clases establecidas */
 
 .list-style-link:hover {
   cursor: pointer;
