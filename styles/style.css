@@ -156,8 +156,8 @@ ul {
   list-style-type: none;
 }
 .link_Helix {
-  color: #8800ff;
   text-decoration: none;
+  color: black;
 }
 /* NAV Styles */
 /* UL contenedor de mi NAV se agrega padding top para separarlo */
@@ -309,6 +309,17 @@ footer {
   font-size: 12px;
   display: flex;
   justify-content: center;
+}
+
+/*  */
+
+.list-style-link:hover {
+  cursor: pointer;
+  color: #007aff;
+}
+.link_Helix:hover {
+  cursor: pointer;
+  color: #007aff;
 }
 
 /* @media device_media */
