@@ -126,6 +126,9 @@ p {
   font-size: 18px;
   font-weight: 300;
 }
+.preset_style{
+  color: #ff00158d;
+}
 
 .p_bands {
   font-size: 14px;
