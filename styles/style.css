@@ -531,6 +531,25 @@ footer {
   .li_styles {
     font-size: 13px;
   }
+
+    /* grid */
+  .scale_container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title_main"
+      "scale_concept"
+      "scale_structure"
+      "scale_example";
+  }
+
+  .scale_concept {
+    grid-area: scale_concept;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
   footer {
     padding-top: 10px;
   }
