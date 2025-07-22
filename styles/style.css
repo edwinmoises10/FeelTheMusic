@@ -172,10 +172,10 @@ p {
   object-fit: cover;
   border-radius: 10px;
   opacity: 0.8;
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
 }
 .about_me:hover {
-  transform: scale(1.05) rotate(0deg);
+  transform: scale(1.05) rotate(1deg);
   filter: brightness(95%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
