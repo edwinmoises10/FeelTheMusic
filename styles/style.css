@@ -445,7 +445,7 @@ p {
     padding-bottom: 10px;
   }
   .about_me {
-    width: 200px;
+    width: 250px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
@@ -685,7 +685,7 @@ p {
     padding: 10px;
   }
   .aboutme_paragrah .about-me-pic {
-    width: 350px;
+    width: 330px;
     height: 650px;
     object-fit: cover;
     border-radius: 10px;

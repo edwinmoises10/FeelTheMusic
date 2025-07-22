@@ -67,14 +67,13 @@
       cursor: pointer;
     }
   }
-
   .aboutme_paragrah {
     @include mixins.box-container(30px);
     @include mixins.general-flex(row-reverse, center, center);
     gap: 30px;
     padding: 10px;
     .about-me-pic {
-      @include mixins.box-size(350px, 650px);
+      @include mixins.box-size(330px, 650px);
       object-fit: cover;
       border-radius: 10px;
       opacity: 0.8;
