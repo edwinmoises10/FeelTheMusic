@@ -1,0 +1,77 @@
+@use "../utilities/mixins";
+
+// .separator-line {
+//   border: none;
+//   height: 25px;
+//   border-radius: 10px;
+//   background: linear-gradient(
+//     to right,
+//     rgb(13, 43, 177),
+//     rgb(53, 126, 163),
+//     rgb(101, 28, 152)
+//   );
+//   margin: 0 0;
+//   @include mixins.box-size(700px, 15px);
+// }
+
+// .separator-line1 {
+//   border: none;
+//   height: 25px;
+//   border-radius: 10px;
+//   background: linear-gradient(
+//     to right,
+//     rgb(13, 43, 177),
+//     rgb(53, 126, 163),
+//     rgb(101, 28, 152)
+//   );
+//   margin: 0 0;
+//   @include mixins.box-size(900px, 15px);
+// }
+
+// .separator-line2 {
+//   border: none;
+//   height: 25px;
+//   border-radius: 10px;
+//   background: linear-gradient(
+//     to right,
+//     rgb(13, 43, 177),
+//     rgb(53, 126, 163),
+//     rgb(101, 28, 152)
+//   );
+//   margin: 0 0;
+//   @include mixins.box-size(1010px, 15px);
+// }
+
+.separator-line,
+.separator-line1,
+.separator-line2 {
+  border: none;
+  height: 25px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(10, 39, 169),
+    rgb(53, 126, 163),
+    rgb(101, 28, 152)
+  );
+  background-size: 200% 100%;
+  animation: animated-gradient ease-in-out infinite;
+  animation-duration: 9s;
+  margin: 0 0;
+} 
+
+@keyframes animated-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.separator-line  { @include mixins.box-size(850px, 15px); }
+.separator-line1 { @include mixins.box-size(1050px, 15px); }
+.separator-line2 { @include mixins.box-size(1200px, 15px); }

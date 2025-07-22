@@ -189,4 +189,18 @@
     font-size: variables.$font-size-tablet-labels;
     font-weight: 300;
   }
+
+
+    // Animation
+
+  .separator-line {
+    @include mixins.box-size(400px, 15px);
+  }
+  .separator-line1 {
+    @include mixins.box-size(500px, 15px);
+  }
+  .separator-line2 {
+    @include mixins.box-size(600px, 15px);
+  }
+
 }

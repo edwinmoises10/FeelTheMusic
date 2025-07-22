@@ -32,7 +32,6 @@
     font-size: variables.$font-size-movile-p-bands;
   }
 
-
   //  Picture Size
 
   .img_title {
@@ -192,4 +191,15 @@
     font-weight: 300;
   }
 
+  // Animation
+
+  .separator-line {
+    @include mixins.box-size(180px, 15px);
+  }
+  .separator-line1 {
+    @include mixins.box-size(250px, 15px);
+  }
+  .separator-line2 {
+    @include mixins.box-size(340px, 15px);
+  }
 }
