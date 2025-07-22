@@ -126,7 +126,7 @@ p {
   font-size: 18px;
   font-weight: 300;
 }
-.preset_style{
+.preset_style {
   color: #ff00158d;
 }
 
@@ -535,7 +535,7 @@ footer {
     font-size: 13px;
   }
 
-    /* grid */
+  /* grid */
   .scale_container {
     grid-template-columns: 1fr;
     grid-template-areas:
