@@ -1,0 +1,25 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+footer {
+  @include mixins.general-flex(column, none, none);
+  padding-top: 50px;
+}
+.p-footer {
+  .p_1 {
+    @include mixins.general-flex(none, start, none);
+    color: #000000;
+    font-size: variables.$font-size-footer;
+
+    @media (max-width: 451px) {
+      padding: 10px;
+      justify-content: flew-start;
+      font-size: variables.$font-size-movile-footer;
+    }
+    @media (min-width: 451px) and (max-width: 1024px) {
+      padding: 10px;
+      justify-content: end;
+      font-size: variables.$font-size-tablet-footer;
+    }
+  }
+}

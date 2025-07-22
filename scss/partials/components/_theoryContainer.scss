@@ -1,0 +1,40 @@
+@use "../utilities/mixins";
+
+.scale_group {
+  padding: 10px;
+  .scale_container {
+    @include mixins.general-grid(auto, 5);
+    grid-template-areas:
+      "title_main title_main title_main title_main title_main"
+      "scale_concept scale_concept scale_concept scale_structure scale_structure"
+      "scale_example  scale_example scale_example scale_example scale_example ";
+
+  
+    @include mixins.box-container(30px);
+  }
+}
+
+.title_main {
+  grid-area: title_main;
+  display: flex;
+  justify-content: center;
+}
+
+.scale_concept {
+  grid-area: scale_concept;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scale_structure {
+  grid-area: scale_structure;
+  display: flex;
+  justify-content: center;
+}
+
+.scale_example {
+  grid-area: scale_example;
+  display: flex;
+  justify-content: center;
+}

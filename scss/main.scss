@@ -1,0 +1,17 @@
+
+// Base
+@use "./partials/base/reset";
+@use "./partials/base/font";
+@use "./partials/base/body";
+
+// Components
+@use "./partials/components/headerMain";
+@use "./partials/components/general";
+@use "./partials/components/mainContainer";
+@use "./partials/components/theoryContainer";
+@use "./partials/components/formContainer";
+@use "./partials/components/mediaDeviceMovil";
+@use "./partials/components/mediaDeviceTablet";
+@use "./partials/components/footer";
+
+

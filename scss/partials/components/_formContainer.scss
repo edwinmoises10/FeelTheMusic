@@ -1,0 +1,36 @@
+@use "../utilities/mixins";
+@use "../utilities/extend";
+@use "../utilities/variables";
+
+/* CSS Form */
+.form_container {
+  padding: 10px 20px;
+  background-color: #f2f2f7;
+  border: none;
+  border-radius: 15px;
+}
+.col-12 {
+  margin: 0px;
+  @include mixins.general-flex(row, end, none);
+}
+.btn {
+  @include mixins.box-size(100px, 40px);
+}
+.btn-primary {
+  @extend %button;
+}
+
+.form-select {
+  color: #8e8e93;
+  font-size: variables.$font-size-select-form;
+}
+.form-control {
+  color: #8e8e93;
+  font-size: variables.$font-size-labels;
+}
+/* label form Conectaconmigo */
+.form-label {
+  text-align: justify;
+  font-size: variables.$font-size-labels;
+  font-weight: 300;
+}

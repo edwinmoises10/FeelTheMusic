@@ -1,0 +1,12 @@
+// Body
+@use "../utilities/variables";
+
+body {
+ 
+
+  font-family: variables.$font-family-content;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  padding: 10px 20px;
+}

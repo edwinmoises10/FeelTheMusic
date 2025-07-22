@@ -1,0 +1,192 @@
+@use "../utilities/extend";
+@use "../utilities/mixins";
+@use "../utilities/variables";
+.btn-primary {
+  @extend %buttonTablet;
+}
+/* @media device_media */
+/* movil */
+@media (min-width: 451px) and (max-width: 1024px) {
+  /* fuentes */
+  h1 {
+    font-size: variables.$font-size-tablet-h1;
+  }
+  h2 {
+    font-size: variables.$font-size-tablet-h2;
+  }
+  h3 {
+    font-size: variables.$font-size-tablet-h3;
+  }
+  h4 {
+    font-size: variables.$font-size-tablet-h4;
+  }
+  p {
+    font-size: variables.$font-size-tablet-p;
+  }
+  // Font Nav
+  .font_import {
+    font-size: variables.$font-size-tablet-nav;
+  }
+  .p_bands {
+    font-size: variables.$font-size-tablet-p-bands;
+  }
+
+  //  Picture Size
+
+  .img_title {
+    height: 80px;
+  }
+  .logo {
+    height: 55px;
+    width: auto;
+  }
+  //  Menu - Hamburguer
+  .nav_menu {
+    height: 45px;
+    width: auto;
+  }
+
+  /* Containers WEB   */
+  /* Containers WEB   */
+  .aboutme_container {
+    @include mixins.general-flex(row-reverse, center, center);
+    gap: 30px;
+    padding-bottom: 10px;
+  }
+  .about_me {
+    @include mixins.box-size(300px, 450px);
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.8s ease;
+
+    &:hover {
+      transform: scale(1.05) rotate(0deg);
+      filter: brightness(95%);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .aboutme_paragrah {
+    @include mixins.box-container(30px);
+    @include mixins.general-flex(row-reverse, center, center);
+    gap: 30px;
+    padding: 10px;
+    .about-me-pic {
+      @include mixins.box-size(350px, 650px);
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05) rotate(1deg);
+        filter: brightness(95%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+    }
+    .text-aboutme {
+      max-width: 500px;
+      text-align: left;
+    }
+  }
+
+  .dataBands {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .data_container {
+    @include mixins.box-container(20px);
+    @include mixins.box-size(240px,400px);
+    @include mixins.general-flex(column, none, center);
+
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    gap: 15px;
+
+    .band_style {
+      //  X = 200, y = 200 px
+      @include mixins.box-size(160px, 150px);
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.9;
+      transition: all 0.5s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        filter: brightness(95%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .links_chords {
+    padding-top: 20px;
+  }
+  .links_info {
+    padding-top: 20px;
+  }
+  .li_styles {
+    font-size: variables.$font-size-tablet-links;
+    .list-style-link {
+      @include mixins.link-style();
+      font-size: variables.$font-size-tablet-links;
+      &:hover {
+        cursor: pointer;
+        color: #007aff;
+      }
+    }
+  }
+
+  .scale_group {
+    padding: 10px;
+    .scale_container {
+      @include mixins.box-container(30px);
+      @include mixins.general-grid(auto, 1);
+      grid-template-areas:
+        "title_main"
+        "scale_concept"
+        "scale_structure"
+        "scale_example";
+        }
+    }
+
+  /* CSS Form */
+  .form_container {
+    padding: 10px 20px;
+    background-color: #f2f2f7;
+    border: none;
+    border-radius: 15px;
+  }
+  .col-12 {
+    margin: 0px;
+    @include mixins.general-flex(row, end, none);
+  }
+  .btn {
+    @include mixins.box-size(100px, 40px);
+  }
+  // .btn-primary {
+  //   @extend %button;
+  // } Preguntar al profe----
+
+  .form-select {
+    color: #8e8e93;
+    font-size: variables.$font-size-tablet-select-form;
+  }
+  .form-control {
+    color: #8e8e93;
+    font-size: variables.$font-size-tablet-labels;
+  }
+  /* label form Conectaconmigo */
+  .form-label {
+    text-align: justify;
+    font-size: variables.$font-size-tablet-labels;
+    font-weight: 300;
+  }
+}

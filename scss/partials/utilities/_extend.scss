@@ -1,0 +1,21 @@
+@use "../utilities/variables";
+
+%button {
+  background-color: variables.$background-color-button;
+  border: none;
+  color: variables.$font-color-button;
+  font-size: variables.$font-size-button;
+}
+%buttonMovile {
+  background-color: variables.$background-color-button;
+  border: none;
+  color: variables.$font-color-button;
+  font-size: variables.$font-size-movile-button;
+}
+
+%buttonTablet {
+  background-color: variables.$background-color-button;
+  border: none;
+  color: variables.$font-color-button;
+  font-size: variables.$font-size-tablet-button;
+}

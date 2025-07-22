@@ -1,0 +1,89 @@
+@use "../utilities/mixins";
+
+/* IMG img_title  */
+.img_title {
+  @include mixins.box-size(0 auto, 80px);
+}
+/* Containers WEB   */
+.aboutme_container {
+  @include mixins.general-flex(row, center, center);
+
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.about_me {
+  @include mixins.box-size(500px, 400px);
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: all 0.8s ease;
+
+  &:hover {
+    transform: scale(1.05) rotate(0deg);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
+.dataBands {
+  @include mixins.general-flex(row, center, flex-start);
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.data_container {
+  @include mixins.box-container(30px);
+  @include mixins.box-size(240px, 470px);
+  @include mixins.general-flex(column, none, center);
+
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+
+  .band_style {
+    //  X = 200, y = 200 px
+    @include mixins.box-size(210px, 220px);
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(95%);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  }
+}
+
+.aboutme_paragrah {
+  @include mixins.box-container(30px);
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+  padding: 10px;
+  .about-me-pic {
+    @include mixins.box-size(300px, 500px);
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05) rotate(1deg);
+      filter: brightness(95%);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .text-aboutme {
+    max-width: 600px;
+    text-align: left;
+  }
+}
+
+.b-section-container {
+  padding-top: 20px;
+}

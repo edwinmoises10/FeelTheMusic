@@ -1,0 +1,54 @@
+// Header
+
+@use "../utilities/variables";
+
+/* NAV Styles */
+/* UL contenedor de mi NAV se agrega padding top para separarlo */
+.navbar-nav {
+  padding-top: 10px;
+}
+/* Funcion Active para denotar que estamos en una pagina en especifico se debe cambiar en cada page-html */
+.nav-link.active {
+  background-color: #eaaf8425;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+/* modifico <a class="nav-link active (agrego una nueva clase para modificar el texto del menu pre definido */
+.font_import {
+  color: variables.$font-color-nav;
+  font-family: variables.$font-family-nav;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 300;
+}
+.nav-link.font_import:hover {
+  color: #0000ff9a;
+  font-weight: 900;
+}
+.logo {
+  height: 50px;
+  width: auto;
+}
+/* bg-body-tertiary Background menu bar */
+/* line 26<span class="navbar-toggler-icon"></span>
+ Icono del menu tipo hamburguesa /// */
+.nav_menu {
+  height: 35px;
+  width: auto;
+}
+/* Padding para separar el menu del H1 */
+.navbar {
+  padding-bottom: 20px;
+}
+/* line 24  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" Borde del boton */
+.navbar-toggler {
+  padding: 8px;
+  border-radius: 15px;
+  border-color: rgba(148, 164, 177, 0.681);
+}
+/* esta funcion activa la sombra sobre el boton */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+

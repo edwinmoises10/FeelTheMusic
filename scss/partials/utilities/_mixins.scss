@@ -1,0 +1,46 @@
+// mixins
+
+@mixin title-flex($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+@mixin general-flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+// box mixins
+@mixin box-container($background-size) {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.2)
+  );
+  background-size: $background-size;
+  border-radius: 15px;
+}
+
+// BOX BAND  width: 240px height: 470px;
+@mixin box-size($width-x, $height-y) {
+  width: $width-x;
+  height: $height-y;
+}
+@mixin link-style() {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+}
+
+@mixin general-grid($rows, $columns) {
+  display: grid;
+  grid-template-rows: repeat($rows, 1fr);
+  grid-template-columns: repeat($columns, 1fr);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}

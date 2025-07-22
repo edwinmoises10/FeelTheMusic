@@ -1,0 +1,73 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: variables.$font-family-titles;
+  font-size: variables.$font-size-h1;
+  color: variables.$font-color-h;
+  font-weight: 400;
+  transition: all 0.6s ease;
+
+  &:hover {
+    transform-style: preserve-3d;
+    color: variables.$background-color-button;
+    filter: brightness(80%);
+    transform: scale(1.02);
+  }
+  @include mixins.title-flex(center);
+  gap: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-family: variables.$font-family-titles;
+  font-size: variables.$font-size-h2;
+  color: variables.$font-color-h;
+
+  @include mixins.title-flex(start);
+}
+h3 {
+  text-align: center;
+  font-family: variables.$font-family-titles;
+  font-size: variables.$font-size-h3;
+  color: variables.$font-color-h;
+
+  @include mixins.title-flex(start);
+}
+h4 {
+  text-align: center;
+  font-family: variables.$font-family-titles;
+  font-size: variables.$font-size-h4;
+  color: variables.$font-color-h;
+
+  @include mixins.title-flex(start);
+}
+p {
+  color: variables.$font-color-p;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+}
+.p_bands {
+  color: variables.$font-color-p-band;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.4;
+}
+.links_chords {
+  padding-top: 20px;
+}
+.links_info {
+  padding-top: 20px;
+}
+.li_styles {
+  .list-style-link {
+    @include mixins.link-style();
+    &:hover {
+      cursor: pointer;
+      color: #007aff;
+    }
+  }
+}

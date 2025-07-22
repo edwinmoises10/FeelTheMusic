@@ -1,27 +1,159 @@
-/* CSS */
-/* GoogleFonts */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
-/* reset css */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
   padding: 10px 20px;
 }
 
+/* NAV Styles */
+/* UL contenedor de mi NAV se agrega padding top para separarlo */
+.navbar-nav {
+  padding-top: 10px;
+}
+
+/* Funcion Active para denotar que estamos en una pagina en especifico se debe cambiar en cada page-html */
+.nav-link.active {
+  background-color: rgba(234, 175, 132, 0.1450980392);
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+/* modifico <a class="nav-link active (agrego una nueva clase para modificar el texto del menu pre definido */
+.font_import {
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.nav-link.font_import:hover {
+  color: rgba(0, 0, 255, 0.6039215686);
+  font-weight: 900;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* bg-body-tertiary Background menu bar */
+/* line 26<span class="navbar-toggler-icon"></span>
+ Icono del menu tipo hamburguesa /// */
+.nav_menu {
+  height: 35px;
+  width: auto;
+}
+
+/* Padding para separar el menu del H1 */
+.navbar {
+  padding-bottom: 20px;
+}
+
+/* line 24  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" Borde del boton */
+.navbar-toggler {
+  padding: 8px;
+  border-radius: 15px;
+  border-color: rgba(148, 164, 177, 0.681);
+}
+
+/* esta funcion activa la sombra sobre el boton */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  color: #000000;
+  font-weight: 400;
+  transition: all 0.6s ease;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+h1:hover {
+  transform-style: preserve-3d;
+  color: #007aff;
+  filter: brightness(80%);
+  transform: scale(1.02);
+}
+
+h2 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+  color: #000000;
+  display: flex;
+  justify-content: start;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  color: #000000;
+  display: flex;
+  justify-content: start;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  display: flex;
+  justify-content: start;
+}
+
+p {
+  color: #000000;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.p_bands {
+  color: #000000;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.links_chords {
+  padding-top: 20px;
+}
+
+.links_info {
+  padding-top: 20px;
+}
+
+.li_styles .list-style-link {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+}
+.li_styles .list-style-link:hover {
+  cursor: pointer;
+  color: #007aff;
+}
+
 /* IMG img_title  */
 .img_title {
-  height: 80px;
   width: 0 auto;
-}
-.aboutme_paragrah {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
+  height: 80px;
 }
 
 /* Containers WEB   */
@@ -33,17 +165,20 @@ body {
   gap: 30px;
   padding-bottom: 10px;
 }
+
 .about_me {
   width: 500px;
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
   opacity: 0.8;
+  transition: all 0.8s ease;
 }
 .about_me:hover {
-  filter: brightness(80%);
-  transform: scale(1.05);
-  transition: all 0.3s ease;
+  transform: scale(1.05) rotate(0deg);
+  filter: brightness(95%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .dataBands {
@@ -56,216 +191,88 @@ body {
 }
 
 .data_container {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+  background-size: 30px;
+  border-radius: 15px;
+  width: 240px;
+  height: 470px;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
-  width: 240px;
-  height: 470px; /* o ajusta al contenido más alto */
-
   border-radius: 15px;
-  background-color: #f2f2f7;
   border: none;
   padding: 15px;
 }
-.band_style:hover {
-  filter: brightness(80%);
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-.band_style {
-  width: 200px;
-  height: 200px;
+.data_container .band_style {
+  width: 210px;
+  height: 220px;
   object-fit: cover;
   border-radius: 10px;
   opacity: 0.9;
+  transition: all 0.5s ease;
 }
-
-/* Estilo Font, Size etc  */
-/* Estilos Letra */
-h1 {
-  padding-bottom: 10px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
-  color: rgb(50, 54, 61);
-  display: flex;
-  justify-content: center;
-  /* transition: 6s;  */
-  gap: 10px;
-}
-h1:hover {
-  transform-style: preserve-3d;
-  transition: 2s;
-  color: rgb(211, 223, 223);
-  filter: brightness(80%);
+.data_container .band_style:hover {
   transform: scale(1.05);
-  transition: all 0.9s ease;
-}
-h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
-  color: rgb(50, 54, 61);
-  display: flex;
-  justify-content: start;
-}
-h3 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 30px;
-  color: rgb(50, 54, 61);
-  display: flex;
-  justify-content: start;
-}
-h4 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  color: rgb(50, 54, 61);
-  display: flex;
-  justify-content: start;
-}
-p {
-  text-align: justify;
-  font-size: 18px;
-  font-weight: 300;
-}
-.preset_style {
-  color: #ff00158d;
+  filter: brightness(95%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-.p_bands {
-  font-size: 14px;
-  text-align: justify;
-  line-height: 1.4;
-}
-
-.list-style-link {
-  text-align: justify;
-  font-size: 18px;
-  font-weight: 300;
-  text-decoration: none;
-  color: black;
-}
-.li_styles {
-  text-align: justify;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.style-link {
-  /* font-style: italic; */
-  text-decoration: none;
-  color: black;
-}
-
-ul {
-  list-style-type: none;
-}
-.link_Helix {
-  text-decoration: none;
-  color: black;
-}
-/* NAV Styles */
-/* UL contenedor de mi NAV se agrega padding top para separarlo */
-.navbar-nav {
-  padding-top: 20px;
-}
-/* Funcion Active para denotar que estamos en una pagina en especifico se debe cambiar en cada page-html */
-.nav-link.active {
-  background-color: #eaae8456;
-  border-radius: 10px;
-  padding: 5px 10px;
-  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
-}
-/* modifico <a class="nav-link active (agrego una nueva clase para modificar el texto del menu pre definido */
-.font_import {
-  font-family: "Quicksand", sans-serif;
-  text-align: justify;
-  font-size: 15px;
-  font-weight: 300;
-}
-.nav-link.font_import:hover {
-  color: #ee2b04aa;
-  font-weight: 900;
-}
-.logo {
-  height: 50px;
-  width: auto;
-}
-/* bg-body-tertiary Background menu bar */
-/* line 26<span class="navbar-toggler-icon"></span>
- Icono del menu tipo hamburguesa /// */
-.nav_menu {
-  height: 35px;
-  width: auto;
-}
-/* Padding para separar el menu del H1 */
-.navbar {
-  padding-bottom: 20px;
-}
-/* line 24  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" Borde del boton */
-.navbar-toggler {
-  padding: 8px;
+.aboutme_paragrah {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+  background-size: 30px;
   border-radius: 15px;
-  border-color: rgba(148, 164, 177, 0.681);
-}
-/* esta funcion activa la sombra sobre el boton */
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-/* CSS Form */
-.form_container {
-  padding: 10px 20px;
-  background-color: #f2f2f7;
-  border: none;
-  border-radius: 15px;
-}
-.col-12 {
-  margin: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
 }
-.btn {
-  height: 40px;
-  width: 100px;
+.aboutme_paragrah .about-me-pic {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
-.btn-primary {
-  background-color: #007aff;
-  border: none;
-  color: white;
-  font-size: 15px;
+.aboutme_paragrah .about-me-pic:hover {
+  transform: scale(1.05) rotate(1deg);
+  filter: brightness(95%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-
-.form-select {
-  color: #8e8e93;
-  font-size: 15px;
-}
-.form-control {
-  color: #8e8e93;
-  font-size: 14px;
-}
-/* label form Conectaconmigo */
-.form-label {
-  text-align: justify;
-  font-size: 15px;
-  font-weight: 300;
+.aboutme_paragrah .text-aboutme {
+  max-width: 600px;
+  text-align: left;
 }
 
-/* grid Fundamento Musical */
+.b-section-container {
+  padding-top: 20px;
+}
+
 .scale_group {
   padding: 10px;
 }
-.scale_container {
+.scale_group .scale_container {
   display: grid;
-  grid-template-rows: auto, auto, auto;
+  grid-template-rows: repeat(auto, 1fr);
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas:
-    "title_main title_main title_main title_main title_main"
-    "scale_concept scale_concept scale_concept scale_structure scale_structure"
-    "scale_example  scale_example scale_example scale_example scale_example ";
-  background-color: #f2f2f7;
   border: none;
   border-radius: 20px;
   padding: 10px;
+  grid-template-areas: "title_main title_main title_main title_main title_main" "scale_concept scale_concept scale_concept scale_structure scale_structure" "scale_example  scale_example scale_example scale_example scale_example ";
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+  background-size: 30px;
+  border-radius: 15px;
 }
 
 .title_main {
@@ -293,36 +300,63 @@ ul {
   justify-content: center;
 }
 
-/* links */
-.links_chords {
-  padding-top: 20px;
+.btn-primary {
+  background-color: #007aff;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
 }
 
-.links_info {
-  padding-top: 20px;
+.btn-primary {
+  background-color: #007aff;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
 }
-/* footer */
-footer {
+
+.btn-primary {
+  background-color: #007aff;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* CSS Form */
+.form_container {
+  padding: 10px 20px;
+  background-color: #f2f2f7;
+  border: none;
+  border-radius: 15px;
+}
+
+.col-12 {
+  margin: 0px;
   display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-}
-.p-footer .p_1 {
-  color: black;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: end;
+  align-items: none;
 }
 
-/* Estilos hover para links con clases establecidas */
-
-.list-style-link:hover {
-  cursor: pointer;
-  color: #007aff;
+.btn {
+  width: 100px;
+  height: 40px;
 }
-.link_Helix:hover {
-  cursor: pointer;
-  color: #007aff;
+
+.form-select {
+  color: #8e8e93;
+  font-size: 13px;
+}
+
+.form-control {
+  color: #8e8e93;
+  font-size: 13px;
+}
+
+/* label form Conectaconmigo */
+.form-label {
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 /* @media device_media */
@@ -330,69 +364,92 @@ footer {
 @media (max-width: 450px) {
   /* fuentes */
   h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
   h4 {
-    font-size: 10px;
+    font-size: 20px;
   }
   p {
-    font-size: 12px;
+    font-size: 15px;
   }
-
-  /* IMG img_title  */
-  .img_title {
-    height: 30px;
-  }
-  .logo {
-    height: 38px;
-    width: auto;
-  }
-  /* Icono del menu tipo hamburguesa  */
-  .nav_menu {
-    height: 30px;
-    width: auto;
-  }
-  /* menu fuente - NAV */
   .font_import {
-    font-size: 10px;
+    font-size: 13px;
   }
   .p_bands {
-    font-size: 10px;
+    font-size: 14px;
   }
-  .list-style-link {
-    font-size: 12px;
+  .img_title {
+    height: 40px;
   }
-
-  .p-footer .p_1 {
-    font-size: 8px;
-    justify-content: start;
+  .logo {
+    height: 45px;
+    width: auto;
   }
-
+  .nav_menu {
+    height: 35px;
+    width: auto;
+  }
+  /* Containers WEB   */
   /* Containers WEB   */
   .aboutme_container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 10px;
   }
   .about_me {
-    width: 180px;
-    height: 280px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
+    transition: all 0.8s ease;
   }
-
-  .li_styles {
-    font-size: 11px;
+  .about_me:hover {
+    transform: scale(1.05) rotate(0deg);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
-  /* bands */
+  .aboutme_paragrah {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    background-size: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .aboutme_paragrah .about-me-pic {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  .aboutme_paragrah .about-me-pic:hover {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .aboutme_paragrah .text-aboutme {
+    max-width: 600px;
+    text-align: left;
+  }
   .dataBands {
     display: flex;
     flex-direction: column;
@@ -401,159 +458,335 @@ footer {
     gap: 10px;
     padding-bottom: 20px;
   }
-
   .data_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    background-size: 20px;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: none;
     align-items: center;
-    width: auto;
-    height: auto; /* o ajusta al contenido más alto */
-
     border-radius: 15px;
-    background-color: #f2f2f7;
     border: none;
-    gap: 10px;
+    padding: 15px;
+    gap: 15px;
   }
-  .band_style:hover {
-    filter: brightness(80%);
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-  }
-  .band_style {
-    width: 100px;
-    height: 100px;
+  .data_container .band_style {
+    width: 160px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.9;
+    transition: all 0.5s ease;
   }
-
-  /* grid */
-  .scale_container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title_main"
-      "scale_concept"
-      "scale_structure"
-      "scale_example";
+  .data_container .band_style:hover {
+    transform: scale(1.05);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
-
-  .scale_concept {
-    grid-area: scale_concept;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
+  .links_chords {
+    padding-top: 20px;
   }
-
-  /* form */
-  .btn-primary {
-    background-color: #007aff;
+  .links_info {
+    padding-top: 20px;
+  }
+  .li_styles {
+    font-size: 15px;
+  }
+  .li_styles .list-style-link {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  .li_styles .list-style-link:hover {
+    cursor: pointer;
+    color: #007aff;
+  }
+  .scale_group {
+    padding: 10px;
+  }
+  .scale_group .scale_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    background-size: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     border: none;
-    color: white;
-    font-size: 12px;
+    border-radius: 20px;
+    padding: 10px;
+    grid-template-areas: "title_main" "scale_concept" "scale_structure" "scale_example";
   }
-
+  /* CSS Form */
+  .form_container {
+    padding: 10px 20px;
+    background-color: #f2f2f7;
+    border: none;
+    border-radius: 15px;
+  }
+  .col-12 {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: none;
+  }
+  .btn {
+    width: 100px;
+    height: 40px;
+  }
   .form-select {
     color: #8e8e93;
-    font-size: 12px;
+    font-size: 14px;
   }
   .form-control {
     color: #8e8e93;
-    font-size: 12px;
+    font-size: 14px;
   }
-
   /* label form Conectaconmigo */
   .form-label {
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
   }
-  footer {
-    padding-top: 10px;
-  }
 }
-
-/* tablets */
+/* @media device_media */
+/* movil */
 @media (min-width: 451px) and (max-width: 1024px) {
+  /* fuentes */
   h1 {
-    font-size: 60px;
+    font-size: 80px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   h4 {
-    font-size: 10px;
+    font-size: 25px;
   }
   p {
-    font-size: 13px;
+    font-size: 17px;
   }
-  /* IMG img_title  */
-  .img_title {
-    height: 60px;
-    width: 0 auto;
-  }
-  /* menu fuente - NAV */
   .font_import {
-    font-size: 13px;
+    font-size: 16px;
   }
   .p_bands {
-    font-size: 13px;
+    font-size: 14px;
   }
-  .list-style-link {
-    font-size: 13px;
+  .img_title {
+    height: 80px;
   }
-  .p-footer .p_1 {
-    font-size: 10px;
-    justify-content: end;
+  .logo {
+    height: 55px;
+    width: auto;
   }
-  .dataBands {
-    flex-wrap: wrap;
+  .nav_menu {
+    height: 45px;
+    width: auto;
   }
-  .data_container {
-    width: 240px;
-    height: 400px; /* o ajusta al contenido más alto */
-  }
+  /* Containers WEB   */
   /* Containers WEB   */
   .aboutme_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 10px;
   }
   .about_me {
     width: 300px;
-    height: 300px;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
+    transition: all 0.8s ease;
   }
-  .style-link {
-    font-size: 13px;
+  .about_me:hover {
+    transform: scale(1.05) rotate(0deg);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
-  .li_styles {
-    font-size: 13px;
-  }
-
-  /* grid */
-  .scale_container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title_main"
-      "scale_concept"
-      "scale_structure"
-      "scale_example";
-  }
-
-  .scale_concept {
-    grid-area: scale_concept;
+  .aboutme_paragrah {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    background-size: 30px;
+    border-radius: 15px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+  }
+  .aboutme_paragrah .about-me-pic {
+    width: 350px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  .aboutme_paragrah .about-me-pic:hover {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .aboutme_paragrah .text-aboutme {
+    max-width: 500px;
     text-align: left;
   }
-
-  footer {
+  .dataBands {
+    flex-wrap: wrap;
+    gap: 20px;
     padding-top: 10px;
   }
+  .data_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    background-size: 20px;
+    border-radius: 15px;
+    width: 240px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    gap: 15px;
+  }
+  .data_container .band_style {
+    width: 160px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+  }
+  .data_container .band_style:hover {
+    transform: scale(1.05);
+    filter: brightness(95%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .links_chords {
+    padding-top: 20px;
+  }
+  .links_info {
+    padding-top: 20px;
+  }
+  .li_styles {
+    font-size: 17px;
+  }
+  .li_styles .list-style-link {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+  }
+  .li_styles .list-style-link:hover {
+    cursor: pointer;
+    color: #007aff;
+  }
+  .scale_group {
+    padding: 10px;
+  }
+  .scale_group .scale_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
+    background-size: 30px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    grid-template-areas: "title_main" "scale_concept" "scale_structure" "scale_example";
+  }
+  /* CSS Form */
+  .form_container {
+    padding: 10px 20px;
+    background-color: #f2f2f7;
+    border: none;
+    border-radius: 15px;
+  }
+  .col-12 {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: none;
+  }
+  .btn {
+    width: 100px;
+    height: 40px;
+  }
+  .form-select {
+    color: #8e8e93;
+    font-size: 14px;
+  }
+  .form-control {
+    color: #8e8e93;
+    font-size: 14px;
+  }
+  /* label form Conectaconmigo */
+  .form-label {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  padding-top: 50px;
+}
+
+.p-footer .p_1 {
+  display: flex;
+  flex-direction: none;
+  justify-content: start;
+  align-items: none;
+  color: #000000;
+  font-size: 12px;
+}
+@media (max-width: 451px) {
+  .p-footer .p_1 {
+    padding: 10px;
+    justify-content: flew-start;
+    font-size: 14px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .p-footer .p_1 {
+    padding: 10px;
+    justify-content: end;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
