@@ -27,8 +27,6 @@
 .f-container {
   padding-top: 50px;
   @include mixins.general-flex(column, start, center);
-  gap: 100px;
-
   .f-icons {
     .footer-logo {
       @include mixins.box-size(50px, 50px);
