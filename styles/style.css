@@ -307,20 +307,6 @@ p {
   font-size: 14px;
 }
 
-.btn-primary {
-  background-color: #007aff;
-  border: none;
-  color: #ffffff;
-  font-size: 17px;
-}
-
-.btn-primary {
-  background-color: #007aff;
-  border: none;
-  color: #ffffff;
-  font-size: 16px;
-}
-
 /* CSS Form */
 .form_container {
   padding: 10px 20px;
@@ -869,53 +855,6 @@ p {
   stroke: #000000;
   stroke-width: 1px;
   fill: rgba(255, 255, 255, 0.9137254902);
-}
-
-@media (max-width: 450px) {
-  .f-container {
-    padding-top: 40px;
-  }
-  .f-container .f-icons .footer-logo {
-    width: 40px;
-    height: 40px;
-  }
-  .f-container .f-icons .footer-container .footer-title {
-    font-size: 11px;
-    font-weight: 300;
-  }
-  .f-container .f-icons .social-media-links {
-    padding-bottom: 40px;
-    gap: 40px;
-  }
-  .f-container .f-icons .social-media-links .icons-styles {
-    width: 25px;
-    height: 25px;
-  }
-}
-@media (min-width: 451px) and (max-width: 1024px) {
-  .f-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    padding-top: 40px;
-  }
-  .f-container .f-icons .footer-logo {
-    width: 45px;
-    height: 45px;
-  }
-  .f-container .f-icons .footer-container .footer-title {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .f-container .f-icons .social-media-links {
-    padding-bottom: 40px;
-    gap: 40px;
-  }
-  .f-container .f-icons .social-media-links .icons-styles {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

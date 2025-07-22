@@ -1,28 +1,6 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
-// footer {
-//   @include mixins.general-flex(column, none, none);
-//   padding-top: 50px;
-// }
-// .p-footer {
-//   .p_1 {
-//     @include mixins.general-flex(none, start, none);
-//     color: #000000;
-//     font-size: variables.$font-size-footer;
-
-//     @media (max-width: 451px) {
-//       padding: 10px;
-//       justify-content: flew-start;
-//       font-size: variables.$font-size-movile-footer;
-//     }
-//     @media (min-width: 451px) and (max-width: 1024px) {
-//       padding: 10px;
-//       justify-content: end;
-//       font-size: variables.$font-size-tablet-footer;
-//     }
-//   }
-// }
 
 .f-container {
   padding-top: 50px;
@@ -62,52 +40,51 @@
   fill: #ffffffe9;
 }
 
-@media (max-width: 450px) {
-  .f-container {
-    padding-top: 40px;
-    .f-icons {
-      .footer-logo {
-        @include mixins.box-size(40px, 40px);
-      }
-      .footer-container {
-        .footer-title {
-          font-size: variables.$font-size-movile-footer;
-          font-weight: 300;
-        }
-      }
-      .social-media-links {
-        padding-bottom: 40px;
-        gap: 40px;
-        .icons-styles {
-          @include mixins.box-size(25px, 25px);
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 450px) {
+//   .f-container {
+//     padding-top: 40px;
+//     .f-icons {
+//       .footer-logo {
+//         @include mixins.box-size(40px, 40px);
+//       }
+//       .footer-container {
+//         .footer-title {
+//           font-size: variables.$font-size-movile-footer;
+//           font-weight: 300;
+//         }
+//       }
+//       .social-media-links {
+//         padding-bottom: 40px;
+//         gap: 40px;
+//         .icons-styles {
+//           @include mixins.box-size(25px, 25px);
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 451px) and (max-width: 1024px) {
+//   .f-container {
+//     @include mixins.general-flex(row, end, center);
 
-@media (min-width: 451px) and (max-width: 1024px) {
-  .f-container {
-    @include mixins.general-flex(row, end, center);
-
-    padding-top: 40px;
-    .f-icons {
-      .footer-logo {
-        @include mixins.box-size(45px, 45px);
-      }
-      .footer-container {
-        .footer-title {
-          font-size: variables.$font-size-tablet-footer;
-          font-weight: 300;
-        }
-      }
-      .social-media-links {
-        padding-bottom: 40px;
-        gap: 40px;
-        .icons-styles {
-          @include mixins.box-size(30px, 30px);
-        }
-      }
-    }
-  }
-}
+//     padding-top: 40px;
+//     .f-icons {
+//       .footer-logo {
+//         @include mixins.box-size(45px, 45px);
+//       }
+//       .footer-container {
+//         .footer-title {
+//           font-size: variables.$font-size-tablet-footer;
+//           font-weight: 300;
+//         }
+//       }
+//       .social-media-links {
+//         padding-bottom: 40px;
+//         gap: 40px;
+//         .icons-styles {
+//           @include mixins.box-size(30px, 30px);
+//         }
+//       }
+//     }
+//   }
+// }

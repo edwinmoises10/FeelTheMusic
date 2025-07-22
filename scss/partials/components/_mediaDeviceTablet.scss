@@ -1,9 +1,7 @@
 @use "../utilities/extend";
 @use "../utilities/mixins";
 @use "../utilities/variables";
-.btn-primary {
-  @extend %buttonTablet;
-}
+
 /* @media device_media */
 /* movil */
 @media (min-width: 451px) and (max-width: 1024px) {
@@ -100,7 +98,7 @@
 
   .data_container {
     @include mixins.box-container(20px);
-    @include mixins.box-size(240px,400px);
+    @include mixins.box-size(240px, 400px);
     @include mixins.general-flex(column, none, center);
 
     border-radius: 15px;
@@ -153,8 +151,8 @@
         "scale_concept"
         "scale_structure"
         "scale_example";
-        }
     }
+  }
 
   /* CSS Form */
   .form_container {
@@ -170,9 +168,6 @@
   .btn {
     @include mixins.box-size(100px, 40px);
   }
-  // .btn-primary {
-  //   @extend %button;
-  // } Preguntar al profe----
 
   .form-select {
     color: #8e8e93;
@@ -189,8 +184,7 @@
     font-weight: 300;
   }
 
-
-    // Animation
+  // Animation
 
   .separator-line {
     @include mixins.box-size(400px, 15px);
