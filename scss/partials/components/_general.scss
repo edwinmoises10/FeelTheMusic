@@ -40,9 +40,24 @@ h4 {
   text-align: center;
   font-family: variables.$font-family-titles;
   font-size: variables.$font-size-h4;
-  color: variables.$font-color-h;
-
+  color: variables.$font-color-Alert;
   @include mixins.title-flex(start);
+  border-radius: 30px;
+  background: linear-gradient(
+    to left,
+    rgba(127, 211, 165, 0.576),
+    rgb(195, 219, 231),
+    rgb(221, 199, 237)
+  );
+  &:hover {
+    transition: 3s;
+    background: linear-gradient(
+      to left,
+      rgba(127, 134, 211, 0.576),
+      rgb(222, 195, 231),
+      rgb(237, 236, 199)
+    );
+  }
 }
 p {
   color: variables.$font-color-p;
@@ -71,4 +86,3 @@ p {
     }
   }
 }
-
