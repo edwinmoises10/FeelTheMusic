@@ -108,12 +108,12 @@ h3 {
 }
 
 h4 {
-  text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.7411764706);
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  padding: 10px;
   border-radius: 30px;
   background: linear-gradient(to left, rgba(127, 211, 165, 0.576), rgb(195, 219, 231), rgb(221, 199, 237));
 }
@@ -405,6 +405,10 @@ p {
   }
   h4 {
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
   }
   p {
     font-size: 15px;
@@ -617,7 +621,11 @@ p {
     font-size: 30px;
   }
   h4 {
-    font-size: 25px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
   }
   p {
     font-size: 17px;

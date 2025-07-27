@@ -17,6 +17,9 @@
   }
   h4 {
     font-size: variables.$font-size-tablet-h4;
+    @include mixins.title-flex(center);
+    padding: 20px;
+    text-align: center;
   }
   p {
     font-size: variables.$font-size-tablet-p;
@@ -195,5 +198,4 @@
   .separator-line2 {
     @include mixins.box-size(600px, 15px);
   }
-
 }

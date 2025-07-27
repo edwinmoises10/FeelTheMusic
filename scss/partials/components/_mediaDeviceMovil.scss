@@ -17,6 +17,9 @@
   }
   h4 {
     font-size: variables.$font-size-movile-h4;
+    @include mixins.title-flex(center);
+    padding: 40px;
+    text-align: center;
   }
   p {
     font-size: variables.$font-size-movile-p;
@@ -199,5 +202,4 @@
   .separator-line2 {
     @include mixins.box-size(340px, 15px);
   }
-  
 }

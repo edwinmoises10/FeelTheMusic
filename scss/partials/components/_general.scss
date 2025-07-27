@@ -37,11 +37,11 @@ h3 {
   @include mixins.title-flex(start);
 }
 h4 {
-  text-align: center;
   font-family: variables.$font-family-titles;
   font-size: variables.$font-size-h4;
   color: variables.$font-color-Alert;
-  @include mixins.title-flex(start);
+  @include mixins.title-flex(center);
+  padding: 10px;
   border-radius: 30px;
   background: linear-gradient(
     to left,
