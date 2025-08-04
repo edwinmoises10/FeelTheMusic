@@ -69,7 +69,7 @@
     }
   }
   .aboutme_paragrah {
-    @include mixins.box-container(30px);
+    @include mixins.box-container(700px);
     @include mixins.general-flex(row-reverse, center, center);
     gap: 30px;
     padding: 10px;
@@ -100,12 +100,12 @@
   }
 
   .data_container {
-    @include mixins.box-container(20px);
+    @include mixins.box-container2(300px);
     @include mixins.box-size(240px, 400px);
     @include mixins.general-flex(column, none, center);
 
     border-radius: 15px;
-    border: none;
+    border: 1px solid rgba(186, 191, 210, 0.833);
     padding: 15px;
     gap: 15px;
 
@@ -147,7 +147,7 @@
   .scale_group {
     padding: 10px;
     .scale_container {
-      @include mixins.box-container(30px);
+       @include mixins.box-container1(1010px);
       @include mixins.general-grid(auto, 1);
       grid-template-areas:
         "title_main"

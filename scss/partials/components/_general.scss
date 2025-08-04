@@ -68,7 +68,8 @@ p {
 .p_bands {
   color: variables.$font-color-p-band;
   font-size: 14px;
-  text-align: justify;
+  font-weight:400;
+  text-align: center;
   line-height: 1.4;
 }
 .links_chords {

@@ -20,7 +20,9 @@ body {
 
 /* Funcion Active para denotar que estamos en una pagina en especifico se debe cambiar en cada page-html */
 .nav-link.active {
-  background-color: rgba(234, 175, 132, 0.1450980392);
+  background-color: rgba(149, 132, 234, 0.1921568627);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
   border-radius: 10px;
   padding: 5px 10px;
   transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
@@ -84,7 +86,7 @@ h1 {
 }
 h1:hover {
   transform-style: preserve-3d;
-  color: #007aff;
+  color: rgba(16, 77, 117, 0.9215686275);
   filter: brightness(80%);
   transform: scale(1.02);
 }
@@ -130,9 +132,10 @@ p {
 }
 
 .p_bands {
-  color: #000000;
+  color: #333333;
   font-size: 14px;
-  text-align: justify;
+  font-weight: 400;
+  text-align: center;
   line-height: 1.4;
 }
 
@@ -197,19 +200,19 @@ p {
 }
 
 .data_container {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
-  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-  background-size: 30px;
-  border-radius: 15px;
+  background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #e3a7a7);
+  background-size: 300px;
+  border-radius: 10px 30px 60px 120px;
   width: 240px;
   height: 470px;
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: center;
-  border-radius: 15px;
-  border: none;
+  border-radius: 30px;
+  border: 1px solid rgba(160, 154, 142, 0.181);
   padding: 15px;
 }
 .data_container .band_style {
@@ -230,8 +233,8 @@ p {
 .aboutme_paragrah {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-  background-size: 30px;
+  background-image: linear-gradient(120deg, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
+  background-size: 500px;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -256,7 +259,6 @@ p {
 }
 .aboutme_paragrah .text-aboutme {
   max-width: 600px;
-  text-align: left;
 }
 
 .b-section-container {
@@ -276,9 +278,9 @@ p {
   grid-template-areas: "title_main title_main title_main title_main title_main" "scale_concept scale_concept scale_concept scale_structure scale_structure" "scale_example  scale_example scale_example scale_example scale_example ";
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
-  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-  background-size: 30px;
-  border-radius: 15px;
+  background-image: linear-gradient(120deg, #73b7c8, #cbd6ea, #eee8f5, #e3a7a7);
+  background-size: 1810px;
+  border-radius: 10px 30px 60px 120px;
 }
 
 .title_main {
@@ -307,7 +309,7 @@ p {
 }
 
 .btn-primary {
-  background-color: #007aff;
+  background-color: rgba(16, 77, 117, 0.9215686275);
   border: none;
   color: #ffffff;
   font-size: 14px;
@@ -396,10 +398,10 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(45deg, #f3e9e8, #96b9d9, #f3e9e8, #96b9d9);
+  background: radial-gradient(circle, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
   z-index: -1;
   background-size: 300% 300%;
-  animation: color 15s ease-in-out infinite alternate;
+  animation: color 25s ease-in-out infinite alternate;
 }
 
 @keyframes color {
@@ -486,8 +488,8 @@ p {
   .aboutme_paragrah {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-    background-size: 30px;
+    background-image: linear-gradient(120deg, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
+    background-size: 400px;
     border-radius: 15px;
     display: flex;
     flex-direction: column-reverse;
@@ -523,11 +525,11 @@ p {
     padding-bottom: 20px;
   }
   .data_container {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-    background-size: 20px;
-    border-radius: 15px;
+    background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #e3a7a7);
+    background-size: 390px;
+    border-radius: 10px 30px 60px 120px;
     width: auto;
     height: auto;
     display: flex;
@@ -580,9 +582,9 @@ p {
   .scale_group .scale_container {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-    background-size: 30px;
-    border-radius: 15px;
+    background-image: linear-gradient(120deg, #73b7c8, #cbd6ea, #eee8f5, #e3a7a7);
+    background-size: 410px;
+    border-radius: 10px 30px 60px 120px;
     display: grid;
     grid-template-rows: repeat(auto, 1fr);
     grid-template-columns: repeat(1, 1fr);
@@ -663,7 +665,7 @@ p {
     font-size: 16px;
   }
   .p_bands {
-    font-size: 14px;
+    font-size: 13px;
   }
   .img_title {
     height: 80px;
@@ -703,8 +705,8 @@ p {
   .aboutme_paragrah {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-    background-size: 30px;
+    background-image: linear-gradient(120deg, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
+    background-size: 700px;
     border-radius: 15px;
     display: flex;
     flex-direction: row-reverse;
@@ -737,11 +739,11 @@ p {
     padding-top: 10px;
   }
   .data_container {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-    background-size: 20px;
-    border-radius: 15px;
+    background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #e3a7a7);
+    background-size: 300px;
+    border-radius: 10px 30px 60px 120px;
     width: 240px;
     height: 400px;
     display: flex;
@@ -749,7 +751,7 @@ p {
     justify-content: none;
     align-items: center;
     border-radius: 15px;
-    border: none;
+    border: 1px solid rgba(186, 191, 210, 0.833);
     padding: 15px;
     gap: 15px;
   }
@@ -794,9 +796,9 @@ p {
   .scale_group .scale_container {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));
-    background-size: 30px;
-    border-radius: 15px;
+    background-image: linear-gradient(120deg, #73b7c8, #cbd6ea, #eee8f5, #e3a7a7);
+    background-size: 1010px;
+    border-radius: 10px 30px 60px 120px;
     display: grid;
     grid-template-rows: repeat(auto, 1fr);
     grid-template-columns: repeat(1, 1fr);

@@ -70,7 +70,7 @@
   }
 
   .aboutme_paragrah {
-    @include mixins.box-container(30px);
+    @include mixins.box-container(400px);
     @include mixins.general-flex(column-reverse, center, center);
     gap: 10px;
     padding: 10px;
@@ -101,7 +101,7 @@
   }
 
   .data_container {
-    @include mixins.box-container(20px);
+    @include mixins.box-container2(390px);
     @include mixins.box-size(auto, auto);
     @include mixins.general-flex(row, none, center);
 
@@ -148,7 +148,8 @@
   .scale_group {
     padding: 10px;
     .scale_container {
-      @include mixins.box-container(30px);
+      @include mixins.box-container1(410px);
+
       @include mixins.general-grid(auto, 1);
       grid-template-areas:
         "title_main"

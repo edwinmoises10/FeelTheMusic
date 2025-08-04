@@ -48,10 +48,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(45deg, #f3e9e8, #96b9d9, #f3e9e8, #96b9d9);
+  background: radial-gradient(circle, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
   z-index: -1;
   background-size: 300% 300%;
-  animation: color 15s ease-in-out infinite alternate;
+  animation: color 25s ease-in-out infinite alternate;
 }
 
 @keyframes color {
