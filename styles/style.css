@@ -390,6 +390,35 @@ p {
   height: 15px;
 }
 
+.animationContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #f3e9e8, #96b9d9, #f3e9e8, #96b9d9);
+  z-index: -1;
+  background-size: 300% 300%;
+  animation: color 15s ease-in-out infinite alternate;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0% 75%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}
 /* @media device_media */
 /* movil */
 @media (max-width: 450px) {
