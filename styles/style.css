@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 body {
@@ -245,7 +246,7 @@ p {
 }
 .aboutme_paragrah .about-me-pic {
   width: 300px;
-  height: 500px;
+  height: 450px;
   object-fit: cover;
   border-radius: 10px;
   opacity: 0.8;
@@ -396,7 +397,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: radial-gradient(circle, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
   z-index: -1;
