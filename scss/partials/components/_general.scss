@@ -79,6 +79,7 @@ p {
   padding-top: 20px;
 }
 .li_styles {
+  font-size: variables.$font-list-size;
   .list-style-link {
     @include mixins.link-style();
     &:hover {

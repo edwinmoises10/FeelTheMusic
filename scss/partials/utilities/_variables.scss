@@ -11,11 +11,27 @@ $font-size-h2: 40px;
 $font-size-h3: 30px;
 $font-size-h4: 20px;
 $font-size-p: 18px;
+$font-list-size: 18px;
 
 $font-size-labels: 13px;
 $font-size-select-form: 13px;
 $font-size-button: 14px;
 
+// Font Size Cards
+$font-size-cards: 18px;
+$font-size-cards-button: 15px;
+
+// Color Fonts - Cards
+$font-color-cards: linear-gradient(
+  180deg,
+  #555f6896,
+  #8d97a9,
+  #99acb2,
+  #e3a7a7
+);
+$font-color-text-cards-p: #000000;
+$font-color-cards-button: rgb(0, 64, 255);
+$font-color-cards-text-button: rgb(255, 255, 255);
 
 // Font Color
 $font-color-nav: #000000;
@@ -25,7 +41,6 @@ $font-color-p-band: #333333;
 $font-color-button: #ffffff;
 // Color Font - Alert - Animation Animate.css
 $font-color-Alert: #000000bd;
-
 
 // Color Background Button
 
@@ -47,7 +62,9 @@ $font-size-movile-links: 15px;
 $font-size-movile-nav: 14px;
 $font-size-movile-p-bands: 14px;
 
-
+// Font Size Cards
+$font-size-cards-movile: 15px;
+$font-size-cards-button-movile: 15px;
 
 // Font Size - Tablets
 
@@ -66,19 +83,13 @@ $font-size-tablet-nav: 16px;
 $font-size-tablet-p-bands: 13px;
 
 // Font Size Cards
-$font-size-cards : 18px;
-$font-size-cards-button: 15px;
-
-// Color Fonts - Cards
-$font-color-cards : rgb(83, 120, 207);
-$font-color-text-cards-p : #000000;
-$font-color-cards-button : rgb(0, 64, 255);
-$font-color-cards-text-button : rgb(255, 255, 255);
+$font-size-cards-tablet: 14px;
+$font-size-cards-button-tablet: 13px;
 
 // Footer
 $font-size-footer: 14px;
 $font-size-movile-footer: 11px;
 $font-size-tablet-footer: 14px;
 
-$icon-fill-color : rgba(6, 45, 60, 0.539);
+$icon-fill-color: rgba(6, 45, 60, 0.539);
 $icon-stroke-color: rgba(0, 0, 0, 0.9);
