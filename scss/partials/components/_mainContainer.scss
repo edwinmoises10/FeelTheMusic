@@ -35,11 +35,12 @@
 .data_container {
   // box container - agrega efecto al contenedor
   @include mixins.box-container2(300px);
-  @include mixins.box-size(240px, 470px);
-  @include mixins.general-flex(column, none, center);
-
+  @include mixins.box-size(240px, 560px);
+  @include mixins.general-flex(row, start,center);
+  flex-wrap: wrap;
+  gap: 12px;
   border-radius: 30px;
-  border: 1px solid rgba(160, 154, 142, 0.181);
+  // border: 1px solid rgba(160, 154, 142, 0.181);
   padding: 15px;
 
   .band_style {
@@ -54,9 +55,10 @@
       transform: scale(1.05);
       filter: brightness(95%);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
+      // cursor: pointer;
     }
   }
+ 
 }
 
 .aboutme_paragrah {

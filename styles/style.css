@@ -205,17 +205,18 @@ p {
 .data_container {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
-  background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #e3a7a7);
+  background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #ddc5c5);
   background-size: 300px;
   border-radius: 10px 30px 60px 120px;
   width: 240px;
-  height: 470px;
+  height: 560px;
   display: flex;
-  flex-direction: column;
-  justify-content: none;
+  flex-direction: row;
+  justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   border-radius: 30px;
-  border: 1px solid rgba(160, 154, 142, 0.181);
   padding: 15px;
 }
 .data_container .band_style {
@@ -230,7 +231,6 @@ p {
   transform: scale(1.05);
   filter: brightness(95%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 }
 
 .aboutme_paragrah {
@@ -484,6 +484,38 @@ p {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
 }
 
+.music-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  position: relative;
+  opacity: 1;
+  transform: translateY(-12px);
+  transition: all 1s ease;
+  gap: 30px;
+}
+.music-links-container .music-links {
+  width: 30px;
+  height: 30px;
+}
+.music-links-container .appMusic1 {
+  fill: #FA233B;
+  stroke-width: 1px;
+}
+.music-links-container .appMusic2 {
+  fill: #1DB954;
+  stroke-width: 1px;
+}
+.music-links-container .appMusic3 {
+  fill: #FF0000;
+  stroke-width: 1px;
+}
+
 /* @media device_media */
 /* movil */
 @media (max-width: 450px) {
@@ -590,7 +622,7 @@ p {
   .data_container {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #e3a7a7);
+    background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #ddc5c5);
     background-size: 390px;
     border-radius: 10px 30px 60px 120px;
     width: auto;
@@ -836,7 +868,7 @@ p {
   .data_container {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
-    background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #e3a7a7);
+    background-image: linear-gradient(180deg, rgba(85, 95, 104, 0.5882352941), #8d97a9, #99acb2, #ddc5c5);
     background-size: 300px;
     border-radius: 10px 30px 60px 120px;
     width: 240px;

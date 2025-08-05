@@ -1,0 +1,43 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+.music-links-container {
+  
+  @include mixins.general-flex(row, center, center);
+
+  @include mixins.box-size(200px, 50px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+
+  position: relative;
+  opacity: 1;
+  transform: translateY(-12px); // ← empieza un poco abajo
+  transition: all 1s ease; // ← suaviza la transición
+
+  gap: 30px;
+
+  .music-links {
+    @include mixins.box-size(30px, 30px);
+  }
+
+  .appMusic1 {
+    fill: variables.$music-icon-color;
+    stroke-width: 1px;
+    //stroke: variables.$icon-stroke-color;
+  }
+  .appMusic2 {
+    fill: variables.$music-icon-color1;
+    stroke-width: 1px;
+    //stroke: variables.$icon-stroke-color;
+  }
+  .appMusic3 {
+    fill: variables.$music-icon-color2;
+    stroke-width: 1px;
+    //stroke: variables.$icon-stroke-color;
+  }
+
+//   &:hover {
+//     opacity:1;
+//     transform: translateY(-10px); // ← vuelve a su lugar original
+//   }
+}
