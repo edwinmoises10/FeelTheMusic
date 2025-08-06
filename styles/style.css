@@ -260,7 +260,36 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+.aboutme_paragrah .my-channel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.aboutme_paragrah .my-channel .my-channel {
+  font-size: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+.aboutme_paragrah .my-channel .music-links1 {
+  width: 50px;
+  height: 50px;
+}
+.aboutme_paragrah .my-channel .appMusic3 {
+  fill: #FF0000;
+  stroke-width: 1px;
+}
+.aboutme_paragrah .my-channel h5 {
+  font-size: 15px;
+}
 .aboutme_paragrah .text-aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
   max-width: 600px;
 }
 
@@ -465,7 +494,7 @@ p {
   color: #000000;
   font-size: 18px;
   text-align: center;
-  font-weight: 500;
+  font-weight: none;
 }
 .cards-container-info .cards-container-box .hidden-card a {
   padding: 10px;
