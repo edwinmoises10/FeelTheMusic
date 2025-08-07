@@ -70,12 +70,20 @@
   }
 
   .aboutme_paragrah {
-    @include mixins.box-container(400px);
-    @include mixins.general-flex(column-reverse, center, center);
+    @include mixins.box-container(410px);
+    @include mixins.general-flex(column-reverse, space-between, center);
     gap: 10px;
-    padding: 10px;
+    padding-top: 20px;
+
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+
     .about-me-pic {
-      @include mixins.box-size(300px, 500px);
+      @include mixins.box-size(300px, 400px);
       object-fit: cover;
       border-radius: 10px;
       opacity: 0.8;
@@ -91,6 +99,18 @@
     .text-aboutme {
       max-width: 600px;
       text-align: left;
+    }
+
+    .my-channel {
+      @include mixins.general-flex(row, none, center);
+      gap: 10px;
+      a {
+        @include mixins.general-flex(row, center, center);
+      }
+      h5 {
+        //Para centrarlo
+        margin: 0;
+      }
     }
   }
 

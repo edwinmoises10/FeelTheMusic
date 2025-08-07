@@ -25,15 +25,12 @@ $font-size-cards-button: 15px;
 
 // Color Fonts - Cards
 $font-color-cards: linear-gradient(
-  180deg,
-  #555f6896,
-  #8d97a9,
-  #99acb2,
-  #e3a7a7
-);
+    180deg,
+     #f1d8c7e9, #8d97a9, #99acb2, #ddc5c5
+  );
 $font-color-text-cards-p: #000000;
-$font-color-cards-button: rgb(0, 64, 255);
-$font-color-cards-text-button: rgb(255, 255, 255);
+$font-color-cards-button:  #007bffd9 ;
+$font-color-cards-text-button: #ffffff;
 
 // Font Color
 $font-color-nav: #000000;

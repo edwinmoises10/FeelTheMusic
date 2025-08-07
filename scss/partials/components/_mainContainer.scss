@@ -36,19 +36,19 @@
 .data_container {
   // box container - agrega efecto al contenedor
   @include mixins.box-container2(300px);
-  @include mixins.box-size(240px, 560px);
-  @include mixins.general-flex(row, start, center);
-  flex-wrap: wrap;
-  gap: 12px;
-  border-radius: 30px;
+  @include mixins.box-size(240px, 490px);
+  // ALINEAR ITEMS DE MI CONTENEDOR SPACE-BEETWEEN
+  @include mixins.general-flex(column, space-between, center);
+
+  border-radius: 25px;
   // border: 1px solid rgba(160, 154, 142, 0.181);
   padding: 15px;
 
   .band_style {
     //  X = 200, y = 200 px
-    @include mixins.box-size(210px, 220px);
+    @include mixins.box-size(200px, 200px);
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0 0 0 34px;
     opacity: 0.9;
     transition: all 0.5s ease;
 
@@ -66,6 +66,11 @@
   @include mixins.general-flex(row, center, center);
   gap: 30px;
   padding: 10px;
+
+  p {
+    margin: 0;
+  }
+
   .about-me-pic {
     @include mixins.box-size(300px, 450px);
     object-fit: cover;
@@ -84,13 +89,16 @@
   // About me paragrah - link (YoutubeChannel)
 
   .my-channel {
-    @include mixins.general-flex(column, center, center);
+    @include mixins.general-flex(row, none, center);
     gap: 10px;
-    .my-channel {
-      font-size: variables.$font-myChannel-size;
-      text-decoration: none;
-      color: #000000;
+    a {
+      @include mixins.general-flex(row, center, center);
     }
+    h5 {
+      //Para centrarlo
+      margin: 0;
+    }
+
     .music-links1 {
       @include mixins.box-size(50px, 50px);
     }

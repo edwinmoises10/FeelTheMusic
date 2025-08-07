@@ -24,6 +24,7 @@
     .hidden-card {
       padding: 30px;
       @include mixins.general-flex(column, center, center);
+      gap: 15px;
       position: absolute;
       top: 0;
       left: 0;
@@ -47,9 +48,16 @@
         font-size: variables.$font-size-cards-button;
         text-decoration: none;
         font-weight: bold;
+
+        &:hover {
+          font-weight: bold;
+          color: #000000;
+          background-color: rgba(192, 99, 1, 0.682);
+        }
       }
       &:hover {
-        opacity: 0.9;
+        opacity: 1;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
       }
     }
     &:hover {

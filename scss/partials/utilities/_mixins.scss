@@ -37,10 +37,10 @@
 // CARD_BANDS
 @mixin box-container2($background-size) {
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   background-image: linear-gradient(
     180deg,
-     #555f6896, #8d97a9, #99acb2, #ddc5c5
+     #f1d8c7e9, #8d97a9, #99acb2, #ddc5c5
   );
   background-size: $background-size;
   border-radius: 10px 30px 60px 120px;
