@@ -962,6 +962,22 @@ p {
     max-width: 500px;
     text-align: left;
   }
+  .aboutme_paragrah .my-channel {
+    display: flex;
+    flex-direction: none;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .aboutme_paragrah .my-channel a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutme_paragrah .my-channel h5 {
+    margin: 0;
+  }
   .dataBands {
     margin: 0;
     display: flex;

@@ -23,7 +23,7 @@
     .social-media-links {
       @include mixins.general-flex(row, start, center);
       
-      padding-bottom: 40px;
+      padding-bottom: 0px;
       gap: 40px;
       .icons-styles {
         @include mixins.box-size(30px, 30px);

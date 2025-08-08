@@ -46,7 +46,7 @@
   border-radius: 10px 30px 60px 120px;
 }
 
-// BOX BAND  width: 240px height: 470px;
+// BOX BAND  width: 240px height: 470px;ancho/alto
 @mixin box-size($width-x, $height-y) {
   width: $width-x;
   height: $height-y;

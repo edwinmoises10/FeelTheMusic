@@ -91,6 +91,17 @@
       max-width: 500px;
       text-align: left;
     }
+    .my-channel {
+      @include mixins.general-flex(none, center, center);
+      gap: 8px;
+      a {
+        @include mixins.general-flex(row, center, center);
+      }
+      h5 {
+        //Para centrarlo
+        margin: 0;
+      }
+    }
   }
 
   .dataBands {
