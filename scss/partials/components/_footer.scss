@@ -22,7 +22,6 @@
     .social-media-links {
       @include mixins.general-flex(row, start, center);
       margin: 0;
-      padding-bottom: 40px;
       gap: 40px;
       .icons-styles {
         @include mixins.box-size(30px, 30px);
@@ -32,6 +31,7 @@
       }
     }
   }
+  padding-bottom: 60px;
 }
 .circle-icon {
   stroke: #000000;
