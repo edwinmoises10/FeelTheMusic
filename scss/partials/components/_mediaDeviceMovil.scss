@@ -124,7 +124,7 @@
     .data_container {
       @include mixins.box-container2(190px);
       @include mixins.box-size(auto, auto);
-      @include mixins.general-flex(row, space-between, center);
+      @include mixins.general-flex(row, space-between, none);
       margin: 0;
       border-radius: 15px;
       border: none;
@@ -133,7 +133,7 @@
 
       .band_style {
         //  X = 200, y = 200 px
-        @include mixins.box-size(160px, 150px);
+        @include mixins.box-size(100px, 100px);
         object-fit: cover;
         border-radius: 10px;
         opacity: 0.9;
@@ -150,16 +150,16 @@
       .music-links-container {
         @include mixins.general-flex(column, center, center);
         padding: 6px;
-        @include mixins.box-size(60px, 170px);
-        border-radius: 10px;
-        opacity: 0.2;
+        @include mixins.box-size(60px, 130px);
+        border-radius: 25px;
+        opacity: 0.6;
         transition: all 1s ease; // ← suaviza la transición
 
-        gap: 25px;
+        gap: 15px;
 
         .music-links {
           @include mixins.general-flex(row, center, center);
-          @include mixins.box-size(30px, 30px);
+          @include mixins.box-size(25px, 25px);
         }
       }
     }
@@ -248,14 +248,14 @@
       margin: 0;
     }
   }
-    // Cards
+  // Cards
 
   .cards-container-info {
     margin: 0;
     @include mixins.general-flex(column, center, center);
     gap: 15px;
     .cards-container-box {
-      @include mixins.box-size(400px, 200px);
+      @include mixins.box-size(360px, 200px);
 
       .card-image {
         top: 50%;

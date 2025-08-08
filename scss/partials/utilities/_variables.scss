@@ -25,11 +25,14 @@ $font-size-cards-button: 15px;
 
 // Color Fonts - Cards
 $font-color-cards: linear-gradient(
-    180deg,
-     #f1d8c7e9, #8d97a9, #99acb2, #ddc5c5
-  );
+  180deg,
+  #f1d8c7e9,
+  #8d97a9,
+  #99acb2,
+  #ddc5c5
+);
 $font-color-text-cards-p: #000000;
-$font-color-cards-button:  #007bffd9 ;
+$font-color-cards-button: #007bffd9;
 $font-color-cards-text-button: #ffffff;
 
 // Font Color
@@ -45,12 +48,11 @@ $font-color-Alert: #000000bd;
 
 $background-color-button: #104d75eb;
 
-// Music Icon Color 
+// Music Icon Color
 
-$music-icon-color: #FA233B;
-$music-icon-color1: #1DB954;
-$music-icon-color2: #FF0000;
-
+$music-icon-color: #fa233b;
+$music-icon-color1: #1db954;
+$music-icon-color2: #ff0000;
 
 // Font Size - Mobile
 
@@ -67,7 +69,7 @@ $font-size-movile-button: 17px;
 
 $font-size-movile-links: 15px;
 $font-size-movile-nav: 14px;
-$font-size-movile-p-bands: 13px;
+$font-size-movile-p-bands: 12px;
 
 // Font Size Cards
 $font-size-cards-movile: 15px;
