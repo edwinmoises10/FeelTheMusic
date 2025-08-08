@@ -122,3 +122,108 @@
 .b-section-container {
   padding-top: 20px;
 }
+
+// <section>
+//   <div class="effects-container">
+//     <div class="item effects-1">1</div>
+//     <div class="item effects-2">2</div>
+//     <div class="item effects-3">3</div>
+//     <div class="item effects-4">4</div>
+//     <div class="item effects-5">5</div>
+//   </div>
+// </section>
+
+.effects-container {
+  
+  @include mixins.general-grid(7, 3);
+  gap: 30px;
+  grid-template-areas:
+    "effect-title effect-title effect-title"
+    "effects-1 effects-1 effects-3"
+    "effects-1 effects-1 effects-3"
+    "effects-2 effects-2 effects-3"
+    "effects-2 effects-2 effects-3"
+    "effects-4 effects-4 effects-4"
+    "effects-4 effects-4 effects-4";
+
+  .item {
+    border-radius: 20px;
+    border: 1px solid red;
+    color: white;
+  }
+}
+
+.effect-title {
+  padding: 30px;
+  background-color: rgb(234, 101, 53);
+  color: white;
+  grid-area: effect-title;
+  @include mixins.general-flex(row, center, center);
+}
+
+.effects-1 {
+  background-color: yellow;
+  grid-area: effects-1;
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+
+  .preset-pic {
+    @include mixins.box-size(100px, 100px);
+    border: 1px solid black;
+  }
+}
+.effects-2 {
+  background-color: red;
+  grid-area: effects-2;
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+
+  .preset-pic {
+    @include mixins.box-size(100px, 100px);
+    border: 1px solid black;
+  }
+}
+.effects-3 {
+  background-color: green;
+  grid-area: effects-3;
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+
+  .preset-pic {
+    @include mixins.box-size(100px, 100px);
+    border: 1px solid black;
+  }
+}
+.effects-4 {
+  background-color: rgb(208, 231, 65);
+  grid-area: effects-4;
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+
+  .preset-pic {
+    @include mixins.box-size(100px, 100px);
+    border: 1px solid black;
+  }
+}
+.effects-5 {
+  background-color: rgb(187, 74, 168);
+  grid-area: effects-5;
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+
+  .preset-pic {
+    @include mixins.box-size(100px, 100px);
+    border: 1px solid black;
+  }
+}
+.effects-6 {
+  background-color: rgb(42, 67, 106);
+  grid-area: effects-6;
+  @include mixins.general-flex(row, center, center);
+  gap: 30px;
+
+  .preset-pic {
+    @include mixins.box-size(100px, 100px);
+    border: 1px solid black;
+  }
+}
