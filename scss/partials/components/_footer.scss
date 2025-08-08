@@ -22,8 +22,8 @@
     gap: 10px;
     .social-media-links {
       @include mixins.general-flex(row, start, center);
-      margin: 0;
-      padding-bottom: 0px;
+      
+      padding-bottom: 30px;
       gap: 40px;
       .icons-styles {
         @include mixins.box-size(30px, 30px);
