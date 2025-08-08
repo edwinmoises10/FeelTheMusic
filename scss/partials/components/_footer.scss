@@ -3,7 +3,7 @@
 
 
 .f-container {
-  padding-top: 20px;
+  padding-top: 50px;
   @include mixins.general-flex(column, start, center);
   .f-icons {
     .footer-logo {
@@ -22,8 +22,8 @@
     gap: 10px;
     .social-media-links {
       @include mixins.general-flex(row, start, center);
-      
-      padding-bottom: 30px;
+
+      padding-bottom: 40px;
       gap: 40px;
       .icons-styles {
         @include mixins.box-size(30px, 30px);
