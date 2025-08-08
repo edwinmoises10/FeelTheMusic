@@ -69,12 +69,12 @@
     }
   }
   .aboutme_paragrah {
-    @include mixins.box-container(700px);
+    @include mixins.box-container(450px);
     @include mixins.general-flex(row-reverse, center, center);
     gap: 30px;
     padding: 10px;
     .about-me-pic {
-      @include mixins.box-size(330px, 650px);
+      @include mixins.box-size(260px, 390px);
       object-fit: cover;
       border-radius: 10px;
       opacity: 0.8;
@@ -94,34 +94,52 @@
   }
 
   .dataBands {
+    margin: 0;
+    @include mixins.general-flex(row, center, center);
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     padding-top: 10px;
-  }
 
-  .data_container {
-    @include mixins.box-container2(300px);
-    @include mixins.box-size(240px, 400px);
-    @include mixins.general-flex(column, none, center);
+    .data_container {
+      @include mixins.box-container2(300px);
+      @include mixins.box-size(240px, 490px);
+      @include mixins.general-flex(column, space-between, none);
 
-    border-radius: 15px;
-    border: 1px solid rgba(186, 191, 210, 0.833);
-    padding: 15px;
-    gap: 15px;
+      border-radius: 15px;
+      border: 1px solid rgba(186, 191, 210, 0.833);
+      padding: 15px;
+      gap: 15px;
 
-    .band_style {
-      //  X = 200, y = 200 px
-      @include mixins.box-size(160px, 150px);
-      object-fit: cover;
-      border-radius: 10px;
-      opacity: 0.9;
-      transition: all 0.5s ease;
+      .band_style {
+        //  X = 200, y = 200 px
+        @include mixins.box-size(200px, 200px);
+        object-fit: cover;
+        border-radius: 10px;
+        opacity: 0.9;
+        transition: all 0.5s ease;
 
-      &:hover {
-        transform: scale(1.05);
-        filter: brightness(95%);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+          filter: brightness(95%);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+        }
+      }
+
+      .music-links-container {
+        @include mixins.general-flex(row, center, center);
+        padding: 6px;
+        @include mixins.box-size(180px, 40px);
+        border-radius: 10px;
+        opacity: 0.2;
+        transition: all 1s ease; // ← suaviza la transición
+
+        gap: 20px;
+
+        .music-links {
+          @include mixins.general-flex(row, center, center);
+          @include mixins.box-size(30px, 30px);
+        }
       }
     }
   }
@@ -147,7 +165,7 @@
   .scale_group {
     padding: 10px;
     .scale_container {
-       @include mixins.box-container1(1010px);
+      @include mixins.box-container1(1010px);
       @include mixins.general-grid(auto, 1);
       grid-template-areas:
         "title_main"
@@ -199,14 +217,23 @@
     @include mixins.box-size(600px, 15px);
   }
 
-  
+  .links-acceso {
+    margin: 0;
+    p {
+      margin: 0;
+    }
+  }
+
   // Cards
 
   .cards-container-info {
     @include mixins.general-flex(row, center, center);
     flex-wrap: wrap;
+    margin: 0;
+    gap: 10px;
 
     .cards-container-box {
+     
       @include mixins.box-size(400px, 200px);
 
       .card-image {
@@ -230,6 +257,4 @@
       }
     }
   }
-
-
 }

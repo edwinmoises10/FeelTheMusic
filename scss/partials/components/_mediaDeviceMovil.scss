@@ -51,7 +51,8 @@
   /* Containers WEB   */
   .aboutme_container {
     @include mixins.general-flex(column, center, center);
-    gap: 30px;
+    gap: 10px;
+    margin: 0;
     padding-bottom: 10px;
   }
   .about_me {
@@ -59,7 +60,7 @@
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
-    transition: all 0.8s ease;
+    transition: all 0.7s ease;
 
     &:hover {
       transform: scale(1.05) rotate(0deg);
@@ -116,33 +117,50 @@
 
   .dataBands {
     @include mixins.general-flex(column, center, center);
+    margin: 0;
     gap: 10px;
     padding-bottom: 20px;
-  }
 
-  .data_container {
-    @include mixins.box-container2(390px);
-    @include mixins.box-size(auto, auto);
-    @include mixins.general-flex(row, none, center);
+    .data_container {
+      @include mixins.box-container2(190px);
+      @include mixins.box-size(auto, auto);
+      @include mixins.general-flex(row, space-between, center);
+      margin: 0;
+      border-radius: 15px;
+      border: none;
+      padding: 15px;
+      gap: 10px;
 
-    border-radius: 15px;
-    border: none;
-    padding: 15px;
-    gap: 15px;
+      .band_style {
+        //  X = 200, y = 200 px
+        @include mixins.box-size(160px, 150px);
+        object-fit: cover;
+        border-radius: 10px;
+        opacity: 0.9;
+        transition: all 0.5s ease;
 
-    .band_style {
-      //  X = 200, y = 200 px
-      @include mixins.box-size(160px, 150px);
-      object-fit: cover;
-      border-radius: 10px;
-      opacity: 0.9;
-      transition: all 0.5s ease;
+        &:hover {
+          transform: scale(1.05);
+          filter: brightness(95%);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+        }
+      }
 
-      &:hover {
-        transform: scale(1.05);
-        filter: brightness(95%);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
+      .music-links-container {
+        @include mixins.general-flex(column, center, center);
+        padding: 6px;
+        @include mixins.box-size(60px, 170px);
+        border-radius: 10px;
+        opacity: 0.2;
+        transition: all 1s ease; // ← suaviza la transición
+
+        gap: 25px;
+
+        .music-links {
+          @include mixins.general-flex(row, center, center);
+          @include mixins.box-size(30px, 30px);
+        }
       }
     }
   }
@@ -224,11 +242,18 @@
     @include mixins.box-size(340px, 15px);
   }
 
-  // Cards
+  .links-acceso {
+    margin: 0;
+    p {
+      margin: 0;
+    }
+  }
+    // Cards
 
   .cards-container-info {
+    margin: 0;
     @include mixins.general-flex(column, center, center);
-
+    gap: 15px;
     .cards-container-box {
       @include mixins.box-size(400px, 200px);
 

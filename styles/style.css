@@ -591,7 +591,7 @@ p {
     font-size: 14px;
   }
   .p_bands {
-    font-size: 14px;
+    font-size: 13px;
   }
   .img_title {
     height: 40px;
@@ -611,7 +611,8 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+    margin: 0;
     padding-bottom: 10px;
   }
   .about_me {
@@ -620,7 +621,7 @@ p {
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
-    transition: all 0.8s ease;
+    transition: all 0.7s ease;
   }
   .about_me:hover {
     transform: scale(1.05) rotate(0deg);
@@ -686,27 +687,29 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     gap: 10px;
     padding-bottom: 20px;
   }
-  .data_container {
+  .dataBands .data_container {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
     background-image: linear-gradient(180deg, rgba(241, 216, 199, 0.9137254902), #8d97a9, #99acb2, #ddc5c5);
-    background-size: 390px;
+    background-size: 190px;
     border-radius: 10px 30px 60px 120px;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: none;
+    justify-content: space-between;
     align-items: center;
+    margin: 0;
     border-radius: 15px;
     border: none;
     padding: 15px;
-    gap: 15px;
+    gap: 10px;
   }
-  .data_container .band_style {
+  .dataBands .data_container .band_style {
     width: 160px;
     height: 150px;
     object-fit: cover;
@@ -714,11 +717,32 @@ p {
     opacity: 0.9;
     transition: all 0.5s ease;
   }
-  .data_container .band_style:hover {
+  .dataBands .data_container .band_style:hover {
     transform: scale(1.05);
     filter: brightness(95%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+  }
+  .dataBands .data_container .music-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 60px;
+    height: 170px;
+    border-radius: 10px;
+    opacity: 0.2;
+    transition: all 1s ease;
+    gap: 25px;
+  }
+  .dataBands .data_container .music-links-container .music-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
   }
   .links_chords {
     padding-top: 20px;
@@ -802,11 +826,19 @@ p {
     width: 340px;
     height: 15px;
   }
+  .links-acceso {
+    margin: 0;
+  }
+  .links-acceso p {
+    margin: 0;
+  }
   .cards-container-info {
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
   }
   .cards-container-info .cards-container-box {
     width: 400px;
@@ -862,7 +894,7 @@ p {
     font-size: 16px;
   }
   .p_bands {
-    font-size: 13px;
+    font-size: 14px;
   }
   .img_title {
     height: 80px;
@@ -903,7 +935,7 @@ p {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     background-image: linear-gradient(120deg, #faf6f5, #cbd6ea, #faf6f5, #cbd6ea);
-    background-size: 700px;
+    background-size: 450px;
     border-radius: 15px;
     display: flex;
     flex-direction: row-reverse;
@@ -913,8 +945,8 @@ p {
     padding: 10px;
   }
   .aboutme_paragrah .about-me-pic {
-    width: 330px;
-    height: 650px;
+    width: 260px;
+    height: 390px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
@@ -931,40 +963,66 @@ p {
     text-align: left;
   }
   .dataBands {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     padding-top: 10px;
   }
-  .data_container {
+  .dataBands .data_container {
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
     background-image: linear-gradient(180deg, rgba(241, 216, 199, 0.9137254902), #8d97a9, #99acb2, #ddc5c5);
     background-size: 300px;
     border-radius: 10px 30px 60px 120px;
     width: 240px;
-    height: 400px;
+    height: 490px;
     display: flex;
     flex-direction: column;
-    justify-content: none;
-    align-items: center;
+    justify-content: space-between;
+    align-items: none;
     border-radius: 15px;
     border: 1px solid rgba(186, 191, 210, 0.833);
     padding: 15px;
     gap: 15px;
   }
-  .data_container .band_style {
-    width: 160px;
-    height: 150px;
+  .dataBands .data_container .band_style {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.9;
     transition: all 0.5s ease;
   }
-  .data_container .band_style:hover {
+  .dataBands .data_container .band_style:hover {
     transform: scale(1.05);
     filter: brightness(95%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+  }
+  .dataBands .data_container .music-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    opacity: 0.2;
+    transition: all 1s ease;
+    gap: 20px;
+  }
+  .dataBands .data_container .music-links-container .music-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
   }
   .links_chords {
     padding-top: 20px;
@@ -1048,12 +1106,20 @@ p {
     width: 600px;
     height: 15px;
   }
+  .links-acceso {
+    margin: 0;
+  }
+  .links-acceso p {
+    margin: 0;
+  }
   .cards-container-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
+    gap: 10px;
   }
   .cards-container-info .cards-container-box {
     width: 400px;
@@ -1083,7 +1149,7 @@ p {
   }
 }
 .f-container {
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: start;
