@@ -591,7 +591,7 @@ p {
     font-size: 14px;
   }
   .p_bands {
-    font-size: 12px;
+    font-size: 14px;
   }
   .img_title {
     height: 40px;
@@ -732,7 +732,7 @@ p {
     width: 60px;
     height: 130px;
     border-radius: 25px;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 1s ease;
     gap: 15px;
   }
@@ -1161,10 +1161,6 @@ p {
   .cards-container-info .cards-container-box .hidden-card a {
     text-align: center;
     font-size: 13px;
-  }
-  .f-container {
-    padding-bottom: 0;
-    margin-bottom: 0;
   }
 }
 .f-container {

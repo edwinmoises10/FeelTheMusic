@@ -152,7 +152,7 @@
         padding: 6px;
         @include mixins.box-size(60px, 130px);
         border-radius: 25px;
-        opacity: 0.6;
+        opacity: 0.8;
         transition: all 1s ease; // ← suaviza la transición
 
         gap: 15px;
