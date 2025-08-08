@@ -1198,7 +1198,8 @@ p {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding-bottom: 40px;
+  margin: 0;
+  padding-bottom: 0px;
   gap: 40px;
 }
 .f-container .f-icons .social-media-links .icons-styles {
