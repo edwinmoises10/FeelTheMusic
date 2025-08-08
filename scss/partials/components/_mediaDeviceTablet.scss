@@ -241,11 +241,9 @@
   .cards-container-info {
     @include mixins.general-flex(row, center, center);
     flex-wrap: wrap;
-    margin: 0;
     gap: 10px;
 
     .cards-container-box {
-     
       @include mixins.box-size(400px, 200px);
 
       .card-image {
@@ -258,7 +256,6 @@
 
       .hidden-card {
         @include mixins.general-flex(row, center, center);
-        gap: 15px;
         p {
           font-size: variables.$font-size-cards-tablet;
         }
@@ -270,9 +267,8 @@
     }
   }
 
-.f-container {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
+  .f-container {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }

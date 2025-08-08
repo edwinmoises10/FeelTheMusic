@@ -869,7 +869,7 @@ p {
 }
 /* @media device_media */
 /* movil */
-@media (min-width: 451px) and (max-width: 1224px) {
+@media (min-width: 451px) and (max-width: 1024px) {
   /* fuentes */
   h1 {
     font-size: 80px;
@@ -1135,7 +1135,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
     gap: 10px;
   }
   .cards-container-info .cards-container-box {
@@ -1155,7 +1154,6 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
   }
   .cards-container-info .cards-container-box .hidden-card p {
     font-size: 14px;
@@ -1164,9 +1162,13 @@ p {
     text-align: center;
     font-size: 13px;
   }
+  .f-container {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 .f-container {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1199,7 +1201,7 @@ p {
   justify-content: start;
   align-items: center;
   margin: 0;
-  padding-bottom: 0px;
+  padding-bottom: 40px;
   gap: 40px;
 }
 .f-container .f-icons .social-media-links .icons-styles {
